@@ -8,21 +8,17 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
-.badge{
-    @apply inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 bg-yellow-400 uppercase rounded-full
-}
-
 .btn {
     @apply bg-gradient-to-r from-indigo-400 from-0% to-violet-400 to-100% text-white px-5 py-7 rounded-lg inline-flex items-center justify-center text-xl font-bold
 }
 
-.ab {
-    @apply font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400
+.active {
+    @apply text-indigo-500 transition-colors duration-200 hover:text-violet-400
 }
 
-/* .default {
-    @apply font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400
-} */
+.default {
+    @apply text-[#757575]
+}
 
 /* height: 718px;
 width: 567px;

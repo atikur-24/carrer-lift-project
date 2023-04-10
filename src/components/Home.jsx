@@ -1,10 +1,11 @@
 import React from 'react';
+import Banner from './Home/Banner';
 
 const Home = () => {
     return (
-        <div>
-            Inside home page
-        </div>
+        <main className='px-12 pt-10 md:px-32 bg-[#F9F9FF]'>
+            <Banner />
+        </main>
     );
 };
 
