@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "logo": "../public/Icons/accounts.png",
+        "category_name": "Accountant",
+        "jobs_available": 200
+    },
+    {
+        "id": 2,
+        "logo": "../public/Icons/business.png",
+        "category_name": "Creative Design",
+        "jobs_available": 150
+    },
+    {
+        "id": 3,
+        "logo": "../public/Icons/social-media.png",
+        "category_name": "Marketing & Sales",
+        "jobs_available": 300
+    },
+    {
+        "id": 4,
+        "logo": "../public/Icons/chip.png",
+        "category_name": "Engineering Job",
+        "jobs_available": 100
+    }
+]
