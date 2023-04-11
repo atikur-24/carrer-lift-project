@@ -26,8 +26,8 @@
       "location": "Dublin , IRE",
       "job_type": "Full-time",
       "salary": "$100K - $150K",
-      "job_desc": "We are seeking a highly skilled frontend developer to join our team and work on exciting projects...",
-      "job_resp": "Collaborate with designers and backend developers to create amazing user experiences...",
+      "job_desc": "We are looking for a Senior Frontend Developer to help us build and maintain our flagship web application.",
+      "job_resp": "Collaborate with designers and backend developers to create amazing user experiences.Build reusable UI components using React.js, Optimize application for maximum speed and scalability, Collaborate with cross-functional teams to define, design, and ship new features",
       "education": "Bachelor's or Master's degree in Computer Science or related field",
       "experience": "7+ years of relevant work experience",
       "contact_info": {
@@ -44,8 +44,8 @@
       "location": "Los Gatos, CA",
       "job_type": "Full-time",
       "salary": "$150K - $250K",
-      "job_desc": "We are seeking a highly skilled data scientist to join our team and work on cutting-edge technologies...",
-      "job_resp": "Analyze data, build models, and communicate insights to stakeholders...",
+      "job_desc": "As a Data Scientist, you will help drive business decisions by providing actionable insights and recommendations to stakeholders. You will analyze large and complex datasets to identify patterns and trends, and develop predictive models to forecast future trends.",
+      "job_resp": "Develop and implement statistical models and machine learning algorithms to analyze complex data sets. Work with stakeholders across the organization to identify business needs and provide data-driven insights and recommendations. Collaborate with cross-functional teams including engineers, product managers, and data analysts to develop data-driven solutions. Communicate findings and recommendations to non-technical stakeholders in a clear and concise manner",
       "education": "Master's or Ph.D. degree in Computer Science, Statistics, or related field",
       "experience": "10+ years of relevant work experience",
       "contact_info": {
@@ -65,7 +65,7 @@
         "job_desc": "We are seeking a skilled Technical Database Engineer to join our dynamic team. In this role, you will be responsible for maintaining and optimizing our database infrastructure, ensuring high availability and performance.",
         "job_resp": "Design and implement database solutions, Develop database backup and recovery plans, Monitor database performance and recommend optimizations, Troubleshoot database issues, Collaborate with cross-functional teams",
         "education": "Bachelor's degree in Computer Science, Information Systems, or related field",
-        "experience": "5+ years of experience as a database engineer or similar role",
+        "experience": "3+ years of experience as a database engineer or similar role",
         "contact_info": {
           "phone": "456-7890",
           "email": "jobs@google.com"
@@ -80,8 +80,8 @@
       "location": "Redmond, WA",
       "job_type": "Full-time",
       "salary": "$130K - $220K",
-      "job_desc": "We are seeking a highly skilled cloud solutions architect to join our team and work on exciting projects...",
-      "job_resp": "Design and implement cloud solutions, collaborate with other teams to ensure integration...",
+      "job_desc": "We are looking for a Cloud Solutions Architect to join our team and help us design and implement secure and scalable cloud-based solutions for our clients. You will be responsible for working closely with clients to understand their requirements and design cloud solutions that meet their needs.",
+      "job_resp": "Design and implement secure and scalable cloud-based solutions for clients, work closely with clients to understand their requirements, provide guidance and recommendations to clients on cloud solutions, collaborate with cross-functional teams to ensure successful delivery of cloud solutions",
       "education": "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
       "experience": "5+ years of experience in cloud computing and infrastructure design",
       "contact_info": {
@@ -94,14 +94,14 @@
         "logo": "../public/Logo/amazon.png",
         "job_title": "Backend Engineer",
         "brand_name": "Amazon",
-        "office": "Onsite",
+        "office": "Remote",
         "location": "Seattle, WA",
         "job_type": "Full-Time",
         "salary": "$110K - $180K",
         "job_desc": "We are seeking a talented backend engineer to join our team and help us build scalable and efficient services that power our cloud infrastructure. Participate in code reviews and provide constructive feedback. Stay up-to-date with emerging trends and technologies in software engineering.",
-        "job_resp":"Design, develop, test, and maintain backend services.",
+        "job_resp":"Design, develop, and maintain backend systems- Write clean, modular, and well-documented code- Collaborate with other engineers, product managers, and designers to build and ship high-quality software- Troubleshoot and debug production issues- Stay up-to-date with emerging trends and technologies in backend engineering",
         "education": "Bachelor's degree in Computer Science or a related field. Collaborate with other engineers to identify and solve complex problems. Participate in code reviews and provide constructive feedback.",
-        "experience": "3+ years of experience in backend development",
+        "experience": "2+ years of experience in backend development",
         "contact_info": {
           "phone": "555-1234",
           "email": "jobs@amazon.com"
@@ -110,5 +110,3 @@
       
 
 ]      
-
-  
