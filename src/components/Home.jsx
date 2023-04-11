@@ -11,6 +11,7 @@ const Home = () => {
         <main className='px-12 pt-10 md:px-32 mb-32'>
             <Banner />
             <Category />
+
            <section>
            <h2 className='text-center text-5xl font-extrabold'>Featured Jobs</h2>
             <p className="text-[#A3A3A3] mb-8 mt-4 text-center">Explore thousands of job opportunities with all the information you need. Its your future</p>
@@ -23,6 +24,7 @@ const Home = () => {
             <button className='btn h-16'>See All Jobs</button>
            </div>
            </section>
+           
         </main>
     );
 };

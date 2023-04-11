@@ -10,6 +10,7 @@ import Home from './components/Home';
 import Statistics from './components/Statistics';
 import Apply from './components/Apply';
 import Blogs from './components/Blogs';
+import Details from './components/Details/Details';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,12 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home/>,
-        loader: () => fetch('feature.json')
+        loader: () => fetch('/feature.json')
+      },
+      {
+        path: 'details/:useId',
+        element: <Details />,
+        loader: () => fetch('/feature.json')
       },
       {
         path: 'header',

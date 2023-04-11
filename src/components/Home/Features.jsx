@@ -1,9 +1,10 @@
 import React from 'react';
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Features = ({ feature }) => {
     const { id, logo, job_title, brand_name, office, job_type, location, salary } = feature;
+    const navigate = useNavigate()
 
     return (
         <div className='rounded-sm shadow-md p-10'>
@@ -20,7 +21,7 @@ const Features = ({ feature }) => {
                     <p className='inline-flex items-center text-[#757575] gap-2 mr-6 text-xl'> <span> <MapPinIcon className='h-6 w-5' /> </span> {location} </p> 
                     <p className='inline-flex items-center text-[#757575] gap-2 text-xl'> <span> <CurrencyDollarIcon className='h-6 w-5' /> </span> Salary: {salary} </p> 
                 </div>
-                <Link className='btn h-12'>View Details</Link>
+                <button onClick={ () => navigate(`details/${id}`) } className='btn h-12'>View Details</button>
             </div>
         </div>
     );
