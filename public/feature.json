@@ -1,0 +1,113 @@
+[
+    {
+      "id": "d54das8452adf5",
+      "logo": "../public/Logo/google-llc.png",
+      "job_title": "Software Engineer",
+      "brand_name": "Google LLC",
+      "office": "Onsite",
+      "location": "Mountain View, CA",
+      "job_type": "Full-time",
+      "salary": "$120K - $200K",
+      "job_desc": "We are seeking a highly motivated software engineer to join our team and work on cutting-edge technologies...",
+      "job_resp": "Design and implement software features, Write unit tests and functional tests...",
+      "education": "Bachelor's or Master's degree in Computer Science or related field",
+      "experience": "5+ years of relevant work experience",
+      "contact_info": {
+        "phone": "555-1234",
+        "email": "jobs@google.com"
+      }
+    },
+    {
+      "id": "3fa9d32g7f54h2",
+      "logo": "../public/Logo/tesla.png",
+      "job_title": "Senior Frontend Developer",
+      "brand_name": "Tesla",
+      "office": "Remote",
+      "location": "Dublin , IRE",
+      "job_type": "Full-time",
+      "salary": "$100K - $150K",
+      "job_desc": "We are seeking a highly skilled frontend developer to join our team and work on exciting projects...",
+      "job_resp": "Collaborate with designers and backend developers to create amazing user experiences...",
+      "education": "Bachelor's or Master's degree in Computer Science or related field",
+      "experience": "7+ years of relevant work experience",
+      "contact_info": {
+        "phone": "555-5678",
+        "email": "jobs@tesla.com"
+      }
+    },
+    {
+      "id": "f65hjg8232j8d1",
+      "logo": "../public/Logo/netflix.png",
+      "job_title": "Data Scientist",
+      "brand_name": "Netflix",
+      "office": "Onsite",
+      "location": "Los Gatos, CA",
+      "job_type": "Full-time",
+      "salary": "$150K - $250K",
+      "job_desc": "We are seeking a highly skilled data scientist to join our team and work on cutting-edge technologies...",
+      "job_resp": "Analyze data, build models, and communicate insights to stakeholders...",
+      "education": "Master's or Ph.D. degree in Computer Science, Statistics, or related field",
+      "experience": "10+ years of relevant work experience",
+      "contact_info": {
+        "phone": "555-9012",
+        "email": "jobs@netflix.com"
+      }
+    },
+    {
+        "id": "c367q4f4e3fa75",
+        "logo": "../public/Logo/google.png",
+        "job_title": "Technical Database Engineer",
+        "brand_name": "Google",
+        "office": "Remote",
+        "location": "California",
+        "job_type": "Full-time",
+        "salary": "$90K - $130K",
+        "job_desc": "We are seeking a skilled Technical Database Engineer to join our dynamic team. In this role, you will be responsible for maintaining and optimizing our database infrastructure, ensuring high availability and performance.",
+        "job_resp": "Design and implement database solutions, Develop database backup and recovery plans, Monitor database performance and recommend optimizations, Troubleshoot database issues, Collaborate with cross-functional teams",
+        "education": "Bachelor's degree in Computer Science, Information Systems, or related field",
+        "experience": "5+ years of experience as a database engineer or similar role",
+        "contact_info": {
+          "phone": "(123) 456-7890",
+          "email": "jobs@google.com"
+        }
+      },      
+    {
+      "id": "s73jkl4521dfe9",
+      "logo": "../public/Logo/airbnb.png",
+      "job_title": "Cloud Solutions Architect",
+      "brand_name": "Airbnb",
+      "office": "Onsite",
+      "location": "Redmond, WA",
+      "job_type": "Full-time",
+      "salary": "$130K - $220K",
+      "job_desc": "We are seeking a highly skilled cloud solutions architect to join our team and work on exciting projects...",
+      "job_resp": "Design and implement cloud solutions, collaborate with other teams to ensure integration...",
+      "education": "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "experience": "5+ years of experience in cloud computing and infrastructure design",
+      "contact_info": {
+        "phone": "+1-0333 78",
+        "email": "careers@airbnb.com"
+      }
+    },
+    {
+        "id": "asd4f5g4h6j8k9l0",
+        "logo": "../public/Logo/amazon.png",
+        "job_title": "Backend Engineer",
+        "brand_name": "Amazon",
+        "office": "Onsite",
+        "location": "Seattle, WA",
+        "job_type": "Full-Time",
+        "salary": "$110K - $180K",
+        "job_desc": "We are seeking a talented backend engineer to join our team and help us build scalable and efficient services that power our cloud infrastructure. Participate in code reviews and provide constructive feedback. Stay up-to-date with emerging trends and technologies in software engineering.",
+        "education": "Bachelor's degree in Computer Science or a related field",
+        "experience": "3+ years of experience in backend development",
+        "contact_info": {
+          "phone": "555-1234",
+          "email": "jobs@amazon.com"
+        }
+      }
+      
+
+]      
+
+  
