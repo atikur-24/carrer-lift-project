@@ -7,13 +7,13 @@ const Features = ({ feature }) => {
     const navigate = useNavigate()
 
     return (
-        <div className='rounded-sm shadow-md p-10'>
-            <div className=''>
+        <div className='rounded-md border border-inherit p-10'>
+            <div className='mb-8'>
                 <img src={logo} alt="logo"  className='object-cover'/>
             </div>
             <div className='space-y-5'>
-                <h2 className='text-2xl text-[#474747]'>{job_title}</h2>
-                <p className='text-xl text-[#757575]'>{brand_name}</p>
+                <h2 className='text-2xl tracking-wide font-extrabold text-[#474747]'>{job_title}</h2>
+                <p className='text-xl font-semibold text-[#757575]'>{brand_name}</p>
                 <p className='text-indigo-400 font-bold'>
                     <span className='rounded-md px-2 py-3 text-center mr-4 border border-indigo-400'>{office}</span> <span className='rounded-lg px-2 py-3 text-center border  border-indigo-400'>{job_type}</span>
                 </p>

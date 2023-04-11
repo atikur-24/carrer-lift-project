@@ -8,9 +8,9 @@ import {
 } from "react-router-dom";
 import Home from './components/Home';
 import Statistics from './components/Statistics';
-import Apply from './components/Apply';
 import Blogs from './components/Blogs';
 import Details from './components/Details/Details';
+import Applied from './components/Apply/Applied';
 
 const router = createBrowserRouter([
   {
@@ -36,8 +36,9 @@ const router = createBrowserRouter([
         element: <Statistics />
       },
       {
-        path: 'apply',
-        element: <Apply />
+        path: 'applied',
+        element: <Applied />,
+        loader: () => fetch('/feature.json')
       },
       {
         path: 'blogs',
