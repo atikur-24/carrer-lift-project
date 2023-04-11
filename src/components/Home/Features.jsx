@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Features = ({ feature }) => {
     const { id, logo, job_title, brand_name, office, job_type, location, salary } = feature;

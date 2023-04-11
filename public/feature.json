@@ -31,7 +31,7 @@
       "education": "Bachelor's or Master's degree in Computer Science or related field",
       "experience": "7+ years of relevant work experience",
       "contact_info": {
-        "phone": "555-5678",
+        "phone": "999-5678",
         "email": "jobs@tesla.com"
       }
     },
@@ -67,7 +67,7 @@
         "education": "Bachelor's degree in Computer Science, Information Systems, or related field",
         "experience": "5+ years of experience as a database engineer or similar role",
         "contact_info": {
-          "phone": "(123) 456-7890",
+          "phone": "456-7890",
           "email": "jobs@google.com"
         }
       },      
@@ -85,7 +85,7 @@
       "education": "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
       "experience": "5+ years of experience in cloud computing and infrastructure design",
       "contact_info": {
-        "phone": "+1-0333 78",
+        "phone": "16 0333 78",
         "email": "careers@airbnb.com"
       }
     },
@@ -99,7 +99,8 @@
         "job_type": "Full-Time",
         "salary": "$110K - $180K",
         "job_desc": "We are seeking a talented backend engineer to join our team and help us build scalable and efficient services that power our cloud infrastructure. Participate in code reviews and provide constructive feedback. Stay up-to-date with emerging trends and technologies in software engineering.",
-        "education": "Bachelor's degree in Computer Science or a related field",
+        "job_resp":"Design, develop, test, and maintain backend services.",
+        "education": "Bachelor's degree in Computer Science or a related field. Collaborate with other engineers to identify and solve complex problems. Participate in code reviews and provide constructive feedback.",
         "experience": "3+ years of experience in backend development",
         "contact_info": {
           "phone": "555-1234",
