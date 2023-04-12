@@ -43,7 +43,7 @@ const router = createBrowserRouter([
         loader: () => fetch('/feature.json')
       },
       {
-        path: 'blogsc',
+        path: 'blogs',
         element: <Blogs />
       }
     ]

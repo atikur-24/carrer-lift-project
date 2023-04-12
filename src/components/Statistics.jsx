@@ -47,8 +47,10 @@ const Statistics = () => {
 
   return (
     <section>
-      <div className="bg-[#F9F9FF] py-28">
+      <div className="bg-[#F9F9FF] py-28 relative">
+      <img className='absolute -top-28 right-0' src="/All Images/Vector-1.png" alt="vector" />
         <h1 className="text-center text-3xl font-extrabold">Assignment Marks</h1>
+      <img className='absolute bottom-0 left-0' src="/All Images/Vector.png" alt="vector" />
       </div>
 
       <div className="mx-16 my-32">

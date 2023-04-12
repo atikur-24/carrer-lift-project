@@ -43,7 +43,7 @@ const ErrorPage = () => {
           <Link
             to='/'
             className='px-4 py-4 font-semibold rounded bg-indigo-500 inline-flex  text-white hover:bg-indigo-600'
-          > <span><ArrowLeftIcon className='h-6 w-10 text-2xl text-white pr-2' /></span>
+          > <span><ArrowLeftIcon className='h-6 w-10 text-white pr-2' /></span>
             Back to homepage
           </Link>
             
