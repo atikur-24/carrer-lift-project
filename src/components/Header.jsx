@@ -1,21 +1,119 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import {
+  BoltIcon,
+  Bars3BottomRightIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/solid";
 
 const Header = () => {
-    return (
-        <header className='px-12 md:px-32 pt-10 bg-[#F9F9FF]'>
-            <div className='md:flex justify-between items-center'>
-                <h1 className='font-extrabold text-xl md:text-3xl tracking-wide'>Career <span className='text-indigo-400'>Lift</span></h1>
-                <nav className='space-x-8'>
-                    <NavLink  className={({ isActive }) => (isActive ? 'active' : 'default')} to='/'>Home</NavLink>
-                    <NavLink  className={({ isActive }) => (isActive ? 'active' : 'default')} to='/statistics'>Statistics</NavLink>
-                    <NavLink  className={({ isActive }) => (isActive ? 'active' : 'default')} to='/applied'>Applied Jobs</NavLink>
-                    <NavLink  className={({ isActive }) => (isActive ? 'active' : 'default')} to='/blogs'>Blogs</NavLink>
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  return (
+    <header className="px-12 md:px-32 pt-10 bg-[#F9F9FF]">
+      <div className="relative flex items-center justify-between">
+        <h1 className="font-extrabold text-xl md:text-3xl tracking-wide">
+          Career <span className="text-indigo-400">Lift</span>
+        </h1>
+        <nav className="space-x-8 hidden lg:flex ">
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "default")}
+            to="/"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "default")}
+            to="/statistics"
+          >
+            Statistics
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "default")}
+            to="/applied"
+          >
+            Applied Jobs
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "default")}
+            to="/blogs"
+          >
+            Blogs
+          </NavLink>
+        </nav>
+        <button className="btn md:h-16 md:w-48">Start Applying</button>
+
+        {/* mobile navbar section */}
+        <div className="lg:hidden">
+          {/* Dropdown Open Button */}
+          <button
+            aria-label="Open Menu"
+            title="Open Menu"
+            onClick={() => setIsMenuOpen(true)}
+          >
+            <Bars3BottomRightIcon className="w-5 text-gray-600" />
+          </button>
+          {isMenuOpen && (
+            <div className="absolute top-0 left-0 w-full z-10">
+              <div className="p-5 bg-white border rounded shadow-sm">
+                {/* Logo & Button section */}
+                <div className="flex items-center justify-between mb-4">
+                  {/* Dropdown menu close button */}
+                  <h1 className="font-bold text-2xl tracking-wide">
+                    Career <span className="text-indigo-400">Lift</span>
+                  </h1>
+                  <div>
+                    <button
+                      aria-label="Close Menu"
+                      title="Close Menu"
+                      onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    >
+                      <XMarkIcon className="w-5 text-gray-600" />
+                    </button>
+                  </div>
+                </div>
+                {/* Mobile Nav Items Section */}
+                <nav>
+                  <ul className="space-y-4">
+                    <li>
+                      <Link to="/" className="default">
+                        Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/statistics"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                      >
+                        Statistics
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/applied"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                      >
+                        Applied Jobs
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/blogs"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                      >
+                        Blogs
+                      </Link>
+                    </li>
+                    <button className="btn md:h-16 md:w-48">Start Applying</button>
+                  </ul>
                 </nav>
-                <button className='btn md:h-16 md:w-48'>Start Applying</button>
+              </div>
             </div>
-        </header>
-    );
+          )}
+        </div>
+      </div>
+    </header>
+  );
 };
 
 export default Header;
