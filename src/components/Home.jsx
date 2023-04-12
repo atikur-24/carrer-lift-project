@@ -19,7 +19,7 @@ const Home = () => {
         <Category />
 
         <section>
-          <h2 className="text-center text-5xl font-extrabold">Featured Jobs</h2>
+          <h2 className="text-center text-3xl md:text-5xl font-bold md:font-extrabold">Featured Jobs</h2>
           <p className="text-[#A3A3A3] mb-8 mt-4 text-center">
             Explore thousands of job opportunities with all the information you
             need. Its your future
@@ -32,7 +32,7 @@ const Home = () => {
           {
             !isShowAll && 
             <div className="mt-10 text-center">
-              <button onClick={ () => handlerShowAll(!isShowAll) } className="btn h-16">See All Jobs</button>
+              <button onClick={ () => handlerShowAll(!isShowAll) } className="btn md:h-16">See All Jobs</button>
             </div>
           }
         </section>

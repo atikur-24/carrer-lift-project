@@ -12,7 +12,7 @@ const Header = () => {
                     <NavLink  className={({ isActive }) => (isActive ? 'active' : 'default')} to='/applied'>Applied Jobs</NavLink>
                     <NavLink  className={({ isActive }) => (isActive ? 'active' : 'default')} to='/blogs'>Blogs</NavLink>
                 </nav>
-                <button className='btn h-16 w-48'>Start Applying</button>
+                <button className='btn md:h-16 md:w-48'>Start Applying</button>
             </div>
         </header>
     );

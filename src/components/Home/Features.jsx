@@ -21,7 +21,7 @@ const Features = ({ feature }) => {
                     <p className='inline-flex items-center text-[#757575] gap-2 mr-6 text-xl'> <span> <MapPinIcon className='h-6 w-5' /> </span> {location} </p> 
                     <p className='inline-flex items-center text-[#757575] gap-2 text-xl'> <span> <CurrencyDollarIcon className='h-6 w-5' /> </span> Salary: {salary} </p> 
                 </div>
-                <button onClick={ () => navigate(`details/${id}`) } className='btn h-12'>View Details</button>
+                <button onClick={ () => navigate(`details/${id}`) } className='btn md:h-12'>View Details</button>
             </div>
         </div>
     );

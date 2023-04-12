@@ -11,7 +11,7 @@ const Category = () => {
 
   return (
     <section className="my-32">
-      <h3 className="text-center text-5xl font-extrabold">Job Category List</h3>
+      <h3 className="text-center text-3xl md:text-5xl font-bold md:font-extrabold">Job Category List</h3>
       <p className="text-[#A3A3A3] mb-8 mt-4 text-center">
         Explore thousands of job opportunities with all the information you
         need. Its your future
