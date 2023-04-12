@@ -1,11 +1,11 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { getShoppingCart } from '../../utilities/fakeDb';
 import AppliedDetails from './AppliedDetails';
+import getPreviousApply from '../../utilities/fakeDb';
 
 const Applied = () => {
     const allData = useLoaderData();
-    const getId = getShoppingCart();
+    const getId = getPreviousApply();
 
     let appliedData = [];
     for(const id in getId) {

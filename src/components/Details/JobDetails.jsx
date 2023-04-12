@@ -1,12 +1,21 @@
 import React from 'react';
 import { CurrencyDollarIcon, CalendarDaysIcon, PhoneIcon, EnvelopeIcon, MapPinIcon  } from '@heroicons/react/24/outline'
-import { addToDb } from '../../utilities/fakeDb';
+import getPreviousApply from '../../utilities/fakeDb';
 
 const JobDetails = ( {details} ) => {
     const { id, job_title, location, salary, contact_info } = details;
 
     const handlerApply = (id) => {
-        addToDb(id);
+        let apply = getPreviousApply()
+        const quantity = apply[id];
+    
+        if(!quantity) {
+            apply[id] = 1;
+        }
+        else {
+          console.log('ache');
+        }
+        localStorage.setItem('job-apply', JSON.stringify(apply))
     }
 
     return (
