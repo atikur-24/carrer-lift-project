@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { getShoppingCart } from '../../utilities/fakeDb';
 import AppliedDetails from './AppliedDetails';
@@ -12,7 +12,6 @@ const Applied = () => {
         const applyData = allData.find(ad => ad.id == id)
         appliedData.push(applyData);
     }
-    console.log(appliedData);
 
     return (
         <section>

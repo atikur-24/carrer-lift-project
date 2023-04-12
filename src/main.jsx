@@ -11,11 +11,13 @@ import Statistics from './components/Statistics';
 import Blogs from './components/Blogs';
 import Details from './components/Details/Details';
 import Applied from './components/Apply/Applied';
+import ErrorPage from './components/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
@@ -41,7 +43,7 @@ const router = createBrowserRouter([
         loader: () => fetch('/feature.json')
       },
       {
-        path: 'blogs',
+        path: 'blogsc',
         element: <Blogs />
       }
     ]
