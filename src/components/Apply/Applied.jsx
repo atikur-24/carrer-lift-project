@@ -12,6 +12,7 @@ const Applied = () => {
         const applyData = allData.find(ad => ad.id == id)
         appliedData.push(applyData);
     }
+    // console.log();
 
     return (
         <section>
@@ -21,7 +22,15 @@ const Applied = () => {
                 <img className='absolute bottom-0 left-0' src="/All Images/Vector.png" alt="vector" />
             </div>       
                 
+            
             <div className='my-32 px-12 md:px-32'>
+            <div className='text-end my-6'>
+                <select name="Filter By" className='bg-gray-100 p-3 px-4 text-gray-600 font-semibold rounded-md'>
+                    <option value="" selected>Filter By</option>
+                    <option value="">Remote</option>
+                    <option value="">OnSite</option>
+                </select>
+            </div>
             {
                 appliedData?.map(apply => <AppliedDetails key={apply?.id} apply={apply} />)
             }
