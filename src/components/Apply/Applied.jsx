@@ -15,8 +15,6 @@ const Applied = () => {
         const applyData = allData.find(ad => ad.id == id)
         appliedData.push(applyData);
     }
-    
-    console.log(appliedData);
 
     // console.log();
 
