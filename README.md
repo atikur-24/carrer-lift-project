@@ -9,4 +9,4 @@
 * blog menu click then show react related blogs
 
 ## Live Link 
-Hosted in Netlify -> [HeroGadget](https://rad-fudge-b1707e.netlify.app/)
+Hosted in Netlify -> [Career Lift](https://rad-fudge-b1707e.netlify.app/)

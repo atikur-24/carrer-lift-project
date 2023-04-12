@@ -8,7 +8,7 @@ const Details = () => {
     const {useId} = useParams();
 
     const [details, setDetails] = useState({});
-    const { id, job_title, location, salary, job_desc, job_resp, education, experience, contact_info } = details;
+    const { job_desc, job_resp, education, experience } = details;
 
     useEffect( () => {
         const singleData = data.find(d => d.id === useId);

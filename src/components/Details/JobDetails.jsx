@@ -1,6 +1,9 @@
 import React from 'react';
 import { CurrencyDollarIcon, CalendarDaysIcon, PhoneIcon, EnvelopeIcon, MapPinIcon  } from '@heroicons/react/24/outline'
 import getPreviousApply from '../../utilities/fakeDb';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const JobDetails = ( {details} ) => {
     const { id, job_title, location, salary, contact_info } = details;
@@ -13,7 +16,7 @@ const JobDetails = ( {details} ) => {
             apply[id] = 1;
         }
         else {
-          console.log('ache');
+            toast.error("You have already apply", {theme: "colored"})
         }
         localStorage.setItem('job-apply', JSON.stringify(apply))
     }
@@ -35,6 +38,7 @@ const JobDetails = ( {details} ) => {
                 <p className='text-[#757575] text-xl inline-flex items-center'> <span><MapPinIcon className='w-5 h-5 text-indigo-400' /></span> <span className='ml-2 font-bold text-[#474747]'>Address : </span> &nbsp; {location}</p>
             </div>
         </div>
+        <ToastContainer />
         <button onClick={ () => handlerApply(id) } className='btn mt-6 w-full h-16'>Apply Now</button>
     </div> 
     );
