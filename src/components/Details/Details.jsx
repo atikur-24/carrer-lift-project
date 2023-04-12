@@ -23,7 +23,7 @@ const Details = () => {
             </div>
 
             <div className='px-12 md:px-32'>
-                <div className='my-28 md:flex justify-between gap-4'>
+                <div className='my-28 lg:flex justify-between gap-4'>
                     <div className='space-y-6'>
                         <p className='text-[#757575] font-medium leading-8'><span className='text-black font-extrabold'>Job Description:</span> {job_desc}</p>
                         <p className='text-[#757575] font-medium leading-8'><span className='text-black font-extrabold'>Job Responsibility:</span> {job_resp}</p>

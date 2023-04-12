@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Banner from "./Home/Banner";
 import Category from "./Home/Category";
 import Features from "./Home/Features";
@@ -6,6 +6,11 @@ import { useLoaderData } from "react-router-dom";
 
 const Home = () => {
   const features = useLoaderData([]);
+  const [isShowAll, setShowAll] = useState(false);
+
+  const handlerShowAll = () => {
+    setShowAll(true)
+  }
 
   return (
     <>
@@ -20,13 +25,16 @@ const Home = () => {
             need. Its your future
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {features?.map((feature) => (
+            {features.slice(0, isShowAll ? 6 : 4)?.map((feature) => (
               <Features key={feature.id} feature={feature} />
             ))}
           </div>
-          <div className="mt-10 text-center">
-            <button className="btn h-16">See All Jobs</button>
-          </div>
+          {
+            !isShowAll && 
+            <div className="mt-10 text-center">
+              <button onClick={ () => handlerShowAll(!isShowAll) } className="btn h-16">See All Jobs</button>
+            </div>
+          }
         </section>
       </main>
     </>
