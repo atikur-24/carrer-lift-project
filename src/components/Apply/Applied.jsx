@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import AppliedDetails from './AppliedDetails';
 import getPreviousApply from '../../utilities/fakeDb';
@@ -7,11 +7,17 @@ const Applied = () => {
     const allData = useLoaderData();
     const getId = getPreviousApply();
 
+    const [data, setData] = useState();
+
+    console.log(data);
     let appliedData = [];
     for(const id in getId) {
         const applyData = allData.find(ad => ad.id == id)
         appliedData.push(applyData);
     }
+    
+    console.log(appliedData);
+
     // console.log();
 
     return (
@@ -26,9 +32,9 @@ const Applied = () => {
             <div className='my-32 px-12 md:px-32'>
             <div className='text-end my-6'>
                 <select name="Filter By" className='bg-gray-100 p-3 px-4 text-gray-600 font-semibold rounded-md'>
-                    <option value="" selected>Filter By</option>
-                    <option value="">Remote</option>
-                    <option value="">OnSite</option>
+                    <option value="filter by" defaultValue="filter">Filter By</option>
+                    <option value="remote">Remote</option>
+                    <option value="onsite">OnSite</option>
                 </select>
             </div>
             {
