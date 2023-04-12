@@ -12,6 +12,7 @@ const Applied = () => {
         const applyData = allData.find(ad => ad.id == id)
         appliedData.push(applyData);
     }
+    console.log(appliedData);
 
     return (
         <section>
@@ -20,7 +21,7 @@ const Applied = () => {
             </div>
             <div className='my-32 px-12 md:px-32'>
             {
-                appliedData.map(apply => <AppliedDetails key={apply.id} apply={apply} />)
+                appliedData?.map(apply => <AppliedDetails key={apply?.id} apply={apply} />)
             }
             </div>
         </section>
