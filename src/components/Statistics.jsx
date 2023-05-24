@@ -6,6 +6,7 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
+  ResponsiveContainer
 } from "recharts";
 
 const Statistics = () => {
@@ -47,13 +48,27 @@ const Statistics = () => {
   return (
     <section>
       <div className="bg-[#F9F9FF] py-28 relative">
-      <img className='absolute -top-28 right-0' src="/All Images/Vector-1.png" alt="vector" />
-        <h1 className="text-center text-3xl font-extrabold">Assignment Marks</h1>
-      <img className='absolute bottom-0 left-0' src="/All Images/Vector.png" alt="vector" />
+        <img
+          className="absolute -top-28 right-0"
+          src="/All Images/Vector-1.png"
+          alt="vector"
+        />
+        <h1 className="text-center text-3xl font-extrabold">
+          Assignment Marks
+        </h1>
+        <img
+          className="absolute bottom-0 left-0"
+          src="/All Images/Vector.png"
+          alt="vector"
+        />
       </div>
 
-      <div className="mx-16 my-32">
-        <AreaChart width={1170} height={300} data={data}>
+      <div className="mx-16 my-32 flex justify-center">
+        <AreaChart
+          width={700}
+          height={300}
+          data={data}
+        >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />

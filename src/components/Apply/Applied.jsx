@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import AppliedDetails from './AppliedDetails';
 import getPreviousApply from '../../utilities/fakeDb';
@@ -7,17 +7,11 @@ const Applied = () => {
     const allData = useLoaderData();
     const getId = getPreviousApply();
 
-    const [data, setData] = useState();
-
-    console.log(data);
     let appliedData = [];
     for(const id in getId) {
         const applyData = allData.find(ad => ad.id == id)
         appliedData.push(applyData);
     }
-
-    // console.log();
-
     return (
         <section>
             <div className='bg-[#F9F9FF] py-28 relative'>

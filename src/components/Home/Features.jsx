@@ -14,7 +14,7 @@ const Features = ({ feature }) => {
             <div className='space-y-5'>
                 <h2 className='text-xl md:text-2xl tracking-wide font-extrabold text-[#474747]'>{job_title}</h2>
                 <p className='text-xl font-semibold text-[#757575]'>{brand_name}</p>
-                <p className='text-indigo-400 font-medium md:font-bold'>
+                <p className='text-indigo-400 font-medium md:font-bold flex md:flex-row flex-col gap-3 w-28 md:w-fit'>
                     <span className='rounded-md px-1 py-2 md:px-2 md:py-3 text-center mr-4 border border-indigo-400'>{office}</span> <span className='rounded-lg px-1 md:px-2 py-2 md:py-3 text-center border  border-indigo-400'>{job_type}</span>
                 </p>
                 <div>

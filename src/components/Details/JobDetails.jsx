@@ -13,6 +13,7 @@ const JobDetails = ( {details} ) => {
         const quantity = apply[id];
     
         if(!quantity) {
+            toast("You have apply successfully")
             apply[id] = 1;
         }
         else {

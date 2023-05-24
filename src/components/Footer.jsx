@@ -7,7 +7,7 @@ const Footer = () => {
                 <div className='space-y-6'>
                     <h3 className='text-white font-bold text-3xl'>Career Lift</h3>
                     <p className='text-gray-400'>There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>
-                    <img src="/public/Icons/Group 9969.png" alt="" />
+                    <img className='cursor-pointer' src="/Icons/Group 9969.png" alt="" />
                 </div>
 
                 <div className='text-gray-400 space-y-6'>
